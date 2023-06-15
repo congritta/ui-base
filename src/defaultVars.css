@@ -1,0 +1,33 @@
+:root {
+  --cui-css-transition: .21s;
+
+  --cui-black-color-50: #FAFAFA;
+  --cui-black-color-100: #F5F5F5;
+  --cui-black-color-200: #EEEEEE;
+  --cui-black-color-300: #E0E0E0;
+  --cui-black-color-400: #BDBDBD;
+  --cui-black-color-500: #9E9E9E;
+  --cui-black-color-600: #757575;
+  --cui-black-color-700: #616161;
+  --cui-black-color-800: #424242;
+  --cui-black-color-900: #212121;
+
+  --cui-accent-color-50: var(--cui-black-color-50);
+  --cui-accent-color-100: var(--cui-black-color-100);
+  --cui-accent-color-200: var(--cui-black-color-200);
+  --cui-accent-color-300: var(--cui-black-color-300);
+  --cui-accent-color-400: var(--cui-black-color-400);
+  --cui-accent-color-500: var(--cui-black-color-500);
+  --cui-accent-color-600: var(--cui-black-color-600);
+  --cui-accent-color-700: var(--cui-black-color-700);
+  --cui-accent-color-800: var(--cui-black-color-800);
+  --cui-accent-color-900: var(--cui-black-color-900);
+
+  --cui-inputs-height: 45px;
+  --cui-inputs-horizontal-padding: 15px;
+  --cui-buttons-gap: 10px;
+
+  --cui-form-label-padding: 15px 0 10px;
+  
+  --cui-gap-between-inputs: 15px;
+}

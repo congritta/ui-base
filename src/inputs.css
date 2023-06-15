@@ -1,0 +1,197 @@
+input,
+button,
+textarea {
+  display: block;
+  width: 100%;
+  flex: 1;
+  min-width: 150px;
+  min-height: var(--cui-inputs-height);
+  border: none;
+  padding: 0 var(--cui-inputs-horizontal-padding);
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="password"],
+textarea {
+  background: var(--cui-black-color-100);
+  transition: background var(--cui-css-transition);
+}
+
+@media(prefers-color-scheme: dark) {
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    background: var(--cui-black-color-900);
+    color: var(--cui-black-color-300)
+  }
+
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder,
+  textarea::placeholder {
+    color: var(--cui-black-color-400)
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  background: var(--cui-black-color-200);
+}
+
+@media(prefers-color-scheme: dark) {
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    background: var(--cui-black-color-800);
+    color: var(--cui-black-color-200)
+  }
+
+  input[type="text"]:focus::placeholder,
+  input[type="password"]:focus::placeholder,
+  textarea:focus::placeholder {
+    color: var(--cui-black-color-300)
+  }
+}
+
+/* Buttons */
+
+button,
+input[type="button"] {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cui-buttons-gap);
+  background: var(--cui-accent-color-700);
+  color: #fff;
+  transition: background var(--cui-css-transition);
+}
+
+@media(prefers-color-scheme: dark) {
+  button,
+  input[type="button"] {
+    background: var(--cui-accent-color-800);
+  }
+}
+
+@media(hover: hover) and (prefers-color-scheme: light) {
+  button:not(:disabled):not(._isZeroed):hover,
+  input[type="button"]:not(:disabled):not(._isZeroed):hover {
+    background: var(--cui-accent-color-800);
+  }
+}
+
+@media(hover: hover) and (prefers-color-scheme: dark) {
+  button:not(:disabled):not(._isZeroed):hover,
+  input[type="button"]:not(:disabled):not(._isZeroed):hover {
+    background: var(--cui-accent-color-900);
+  }
+}
+
+button:disabled,
+input[type="button"]:disabled {
+  background: var(--cui-black-color-200);
+  cursor: not-allowed;
+  color: var(--cui-black-color-700);
+}
+
+@media(prefers-color-scheme: dark) {
+  button:disabled,
+  input[type="button"]:disabled {
+    background: var(--cui-black-color-700);
+    color: var(--cui-black-color-300);
+  }
+}
+
+button._isDuctile,
+input[type="button"]._isDuctile {
+  width: auto;
+  min-width: unset;
+  flex: unset;
+}
+
+button._isZeroed,
+input[type="button"]._isZeroed {
+  width: auto;
+  flex: unset;
+  min-width: unset;
+  min-height: unset;
+  background: transparent;
+  color: #000;
+  padding: 0;
+}
+
+@media(prefers-color-scheme: dark) {
+  button._isZeroed,
+  input[type="button"]._isZeroed {
+    color: var(--cui-black-color-400)
+  }
+}
+
+button > * {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+button > svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+button:not(._noIconFill) > svg {
+  fill: #fff;
+}
+
+button._isZeroed:not(._noIconFill) > svg {
+  fill: #000
+}
+
+@media(prefers-color-scheme: dark) {
+  button._isZeroed:not(._noIconFill) > svg {
+    fill: #fff
+  }
+}
+
+/* Form label */
+
+.form-label {
+  display: block;
+  width: 100%;
+  flex-basis: 100%;
+  font-weight: bold;
+  padding: var(--cui-form-label-padding);
+  margin-bottom: calc(var(--cui-gap-between-inputs) * -1);
+}
+
+.fields-wrapper:first-child > .form-label {
+  padding-top: 0
+}
+
+/* Form wrapper */
+
+.fields-wrapper {
+  display: flex;
+  gap: var(--cui-gap-between-inputs);
+  flex-wrap: wrap
+}
+
+/* Form tag */
+form {
+  display: block;
+  width: 100%;
+}
+
+form:not(:first-child) {
+  margin-top: 1em;
+}
+
+form > .fields-wrapper:not(:first-child) {
+  margin-top: var(--cui-gap-between-inputs)
+}
