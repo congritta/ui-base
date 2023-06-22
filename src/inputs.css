@@ -35,6 +35,7 @@ textarea {
 
 textarea {
   resize: none;
+  padding: calc((var(--cui-inputs-height) - 1em) / 2) var(--cui-inputs-horizontal-padding);
 }
 
 input[type="text"]:focus,
@@ -166,8 +167,7 @@ button._isZeroed:not(._noIconFill) > svg {
   width: 100%;
   flex-basis: 100%;
   font-weight: bold;
-  padding: var(--cui-form-label-padding);
-  margin-bottom: calc(var(--cui-gap-between-inputs) * -1);
+  margin-bottom: calc(var(--cui-gap-between-inputs) * -1 + .5em);
 }
 
 .fields-wrapper:first-child > .form-label {
@@ -180,6 +180,10 @@ button._isZeroed:not(._noIconFill) > svg {
   display: flex;
   gap: var(--cui-gap-between-inputs);
   flex-wrap: wrap
+}
+
+.fields-wrapper > .fields-wrapper {
+  flex: 1
 }
 
 /* Form tag */

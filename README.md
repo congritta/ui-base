@@ -10,7 +10,8 @@ Read more here: https://ui.congritta.com
 yarn add @congritta-ui/base
 ```
 
-after this, import it once into entry point of your project (that file where `ReactDOM.render` or `ReactDOM.createRoot`):
+after this, import it once into entry point of your project (that file where `ReactDOM.render`
+or `ReactDOM.createRoot`):
 
 ```javascript
 import '@congritta-ui/base';
@@ -64,13 +65,6 @@ Provide these CSS vars to apply some styles. What value to use as var value - yo
     </td>
   </tr>
   <tr>
-    <td><code>--cui-form-label-padding</code></td>
-    <td><code>padding</code></td>
-    <td>
-      Paddings around text of form text labels (.form-label element)
-    </td>
-  </tr>
-  <tr>
     <td><code>--cui-gap-between-inputs</code></td>
     <td><code>gap</code>, <code>margin</code></td>
     <td>
@@ -95,7 +89,8 @@ __Important:__ Import CSS with your vars AFTER importing `@congritta-ui/base`.
 
 ## How to make additional styles
 
-Just write your CSS files with your own styles. You can learn source code of all Congritta UI libs. You also can provide CSS for Congritta UI components (read more in them docs).
+Just write your CSS files with your own styles. You can learn source code of all Congritta UI libs. You also can provide
+CSS for Congritta UI components (read more in them docs).
 
 ## How to change page fonts
 
@@ -112,9 +107,11 @@ There are basic styles for `html`, `body`, `svg`, `img`, `audio`, `video`, `ifra
 
 ### Inputs styles
 
-There are basic styles for input elements like `input`, `button` and `textarea`. All inputs are `display: block` and `width: 100%` in default.
+There are basic styles for input elements like `input`, `button` and `textarea`. All inputs are `display: block`
+and `width: 100%` in default.
 
-Buttons may have class `_isDuctile` for making button auto width'ed and class `_isZeroed` for removing all styles from button (in this case, we get transparent button with no background, padding, borders and so on.).
+Buttons may have class `_isDuctile` for making button auto width'ed and class `_isZeroed` for removing all styles from
+button (in this case, we get transparent button with no background, padding, borders and so on.).
 
 There are basic `form` element styles with 100% width, display block and margin top 1em.
 
@@ -151,6 +148,7 @@ There are basic styles for `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `p`, `ul`, `ol`, 
 
 There are most used in web helpful classes:
 
-__Flex__: `.flex`, `.flex-ais`, `.flex-aic`, `.flex-aifs`, `.flex-aie`, `.flex-jcfs`, `.flex-jcfe`, `.flex-jcsb`, `.flex-jcc`, `.flex-jcsa`, `.flex-wrap`, `flex-nowrap`
+__Flex
+__: `.flex`, `.flex-ais`, `.flex-aic`, `.flex-aifs`, `.flex-aie`, `.flex-jcfs`, `.flex-jcfe`, `.flex-jcsb`, `.flex-jcc`, `.flex-jcsa`, `.flex-wrap`, `flex-nowrap`
 
 In future @congritta-ui/base releases, there will be more classes
